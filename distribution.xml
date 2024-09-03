@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-script minSpecVersion="1">
+    <title>CSSCAN Application Installation</title>
+    <license file="license.txt"/>
+    <options customize="allow" require-scripts="false"/>
+    <choices-outline>
+        <line choice="default"/>
+    </choices-outline>
+    <choice id="default" visible="false">
+        <pkg-ref id="com.folls.csscan"/>
+    </choice>
+    <pkg-ref id="com.folls.csscan" version="1.0" onConclusion="none">csscan_component.pkg</pkg-ref>
+</installer-script>
